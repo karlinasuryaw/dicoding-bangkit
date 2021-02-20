@@ -1,0 +1,309 @@
+main {
+  background: rgb(255, 255, 255);
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: "Cookie", cursive;
+  background: #ffffff;
+  line-height: 1.4;
+  margin: 0;
+}
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+.container {
+  grid-template-columns: minmax(20%, 80%) 1fr;
+  padding: 0;
+  margin: 0;
+}
+.top-bar {
+  height: 50px;
+  background-color: #666;
+}
+.nav-container {
+  height: 500px;
+  background-color: white;
+  object-fit: cover;
+  height: auto;
+  text-align: center;
+  padding: 50px;
+}
+
+.slogan {
+  font-size: 85px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+.slogan-bot {
+  font-size: 25px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+
+.nav-logo {
+  width: 30%;
+  padding-top: 50px;
+}
+.imgprofile {
+  height: auto;
+  width: 60%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+.imgslide {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+}
+div a:hover {
+  opacity: 0.5;
+}
+.fab {
+  font-size: 30px;
+  color: #7c8693;
+}
+
+.fab:hover {
+  opacity: 0.2;
+}
+
+.btn {
+  background-color: #e2edff;
+  border: none;
+  color: grey;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+p {
+  color: #666;
+}
+
+.title {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(66, 53, 45);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-top: 10px;
+  position: absolute;
+}
+
+.box {
+  background: white;
+  margin-bottom: 2em;
+  width: auto;
+  height: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.space {
+  width: 50%;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.box-content {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.carousel-lmgs {
+  width: 100%;
+  animation: fade 1.5s;
+  display: none;
+}
+
+.prev,
+.next {
+  position: absolute;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+  top: 0%;
+  height: 100%;
+  width: 50%;
+}
+
+.next {
+  top: 0%;
+  right: 0;
+  height: 100%;
+  width: 50%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 400px) {
+  .boxs {
+    margin-top: -1em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .boxs {
+    margin-top: inherit;
+  }
+
+  .box {
+    margin-bottom: 2em;
+    display: flex;
+    flex: 0 1 calc(25% - 50px);
+  }
+}
+.size {
+  font-size: 20px;
+  font-family: "Arapey", serif;
+  text-align: justify;
+}
+.carousel-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+}
+
+.footer-left {
+  margin: auto;
+  padding: 10px;
+  flex: 25%;
+}
+
+.footer-right {
+  padding: 10px;
+  flex: 25%;
+  margin: auto;
+}
+
+.footer-right {
+  padding: 10px;
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+.bio {
+  font-size: 20px;
+  font-family: "Arapey", serif;
+  text-align: justify;
+}
+button:focus {
+  outline: none;
+}
+
+.btn-nav {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  color: black;
+  border: none;
+  background-color: #c3d9f1;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.btn-nav:hover {
+  background-color: white;
+}
+
+.d-menu {
+  position: absolute;
+  display: inline-block;
+  top: 60px;
+  right: 0px;
+}
+.d-btn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: "Cookie", cursive;
+  margin: 0;
+}
+.d-menu-content {
+  display: none;
+  background-color: rgb(172, 172, 172);
+  opacity: 0.6;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  text-align: -webkit-auto;
+}
+
+.d-menu-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.d-menu a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.show {
+  display: block;
+}
+
+h7 {
+  font-size: 24px;
+}
